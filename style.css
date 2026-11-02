@@ -1,0 +1,324 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #07110e;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px;
+    background-color: #10221b;
+}
+
+header h2 {
+    color: #e7b84b;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: #e7b84b;
+}
+
+.hero {
+    text-align: center;
+    padding: 150px 20px;
+}
+
+.hero h1 {
+    font-size: 65px;
+    color: #e7b84b;
+}
+
+.hero p {
+    margin: 20px;
+    color: #cccccc;
+}
+
+.button {
+    display: inline-block;
+    background-color: #e7b84b;
+    color: black;
+    padding: 12px 25px;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.explore {
+    padding: 70px 50px;
+    text-align: center;
+}
+
+.explore h2 {
+    color: #e7b84b;
+    font-size: 35px;
+}
+
+.explore p {
+    color: #cccccc;
+    margin: 10px 0 30px;
+}
+
+.picture-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.picture-card {
+    background-color: #10221b;
+    border: 1px solid #294438;
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.picture-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.picture-card h3 {
+    color: #e7b84b;
+    margin: 15px;
+}
+
+.picture-card p {
+    padding: 0 15px 15px;
+}
+
+.picture-card:hover {
+    transform: translateY(-10px);
+    border-color: #e7b84b;
+}
+
+@media (max-width: 768px) {
+    .picture-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.spider-info {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.spider-info img {
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.spider-info h1 {
+    color: #e7b84b;
+    margin: 25px;
+    font-size: 40px;
+}
+
+.spider-info p {
+    color: #cccccc;
+    max-width: 650px;
+    margin: 20px auto;
+    line-height: 1.8;
+}
+
+.button {
+    display: inline-block;
+    background-color: #e7b84b;
+    color: black;
+    padding: 12px 25px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+/* SPIDER DETAILS PAGE */
+
+.spider-page {
+    min-height: 100vh;
+    padding: 40px 8%;
+    background: #07110e;
+    color: white;
+}
+
+.spider-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #294438;
+}
+
+.spider-header h2 {
+    color: #e7b84b;
+}
+
+.spider-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1100px;
+    margin: 70px auto;
+}
+
+.spider-content img {
+    width: 45%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 2px solid #e7b84b;
+}
+
+.spider-details {
+    flex: 1;
+}
+
+.spider-details h1 {
+    color: #e7b84b;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.spider-details p {
+    color: #cccccc;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.spider-details h3 {
+    color: #e7b84b;
+    margin: 20px 0 10px;
+}
+
+.spider-details ul {
+    color: #cccccc;
+    line-height: 2;
+    padding-left: 20px;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 13px 25px;
+    background: #e7b84b;
+    color: black;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+    .spider-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .spider-content img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .spider-details h1 {
+        font-size: 32px;
+    }
+}
+
+/* MOBILE RESPONSIVE DESIGN */
+
+@media screen and (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 15px;
+    }
+
+    header h2 {
+        font-size: 22px;
+    }
+
+    .hero {
+        padding: 100px 15px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .explore {
+        padding: 40px 15px;
+    }
+
+    .explore h2 {
+        font-size: 26px;
+    }
+
+    .picture-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .picture-card img {
+        height: 230px;
+    }
+
+    .spider-page {
+        padding: 20px 15px;
+    }
+
+    .spider-header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .spider-content {
+        flex-direction: column;
+        gap: 25px;
+        margin: 35px auto;
+    }
+
+    .spider-content img {
+        width: 100%;
+        height: 280px;
+    }
+
+    .spider-details h1 {
+        font-size: 30px;
+    }
+
+    .spider-details p {
+        font-size: 15px;
+    }
+}
